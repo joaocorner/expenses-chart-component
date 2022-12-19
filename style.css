@@ -56,10 +56,48 @@ body {
   border-radius: 15px;
   padding: 15px;
   height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .box2-title {
   font-size: 1.2rem;
   font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.box2-total {
+  border-top: 2px solid hsl(27, 66%, 92%);
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box2-total-title {
+  font-size: 0.7rem;
+  color: hsl(28, 10%, 53%);
+}
+
+.box2-total-balance {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.box2-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.box2-variation {
+  text-align: end;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.box2-text {
+  font-size: 0.7rem;
+  color: hsl(28, 10%, 53%);
   margin-bottom: 5px;
 }
