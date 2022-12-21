@@ -101,3 +101,9 @@ body {
   color: hsl(28, 10%, 53%);
   margin-bottom: 5px;
 }
+
+footer {
+  margin-top: 15px;
+  font-size: 0.7rem;
+  color: hsl(28, 10%, 53%);
+}
