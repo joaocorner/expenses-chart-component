@@ -67,6 +67,14 @@ body {
   margin-bottom: 5px;
 }
 
+.container {
+  width: 70%;
+}
+
+#canvas {
+  width: 100%;
+}
+
 .box2-total {
   border-top: 2px solid hsl(27, 66%, 92%);
   padding-top: 20px;
