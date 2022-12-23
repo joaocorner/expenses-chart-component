@@ -25,7 +25,9 @@
       </div>
       <div class="box2">
         <div class="box2-title">Spending - Last 7 days</div>
-        <div>mon tue wed thu fri sat sun</div>
+        <div class="container">
+          <canvas class="canvas"></canvas>
+        </div>
         <div class="box2-total">
           <div class="box2-left">
             <div class="box2-total-title">Total this month</div>
@@ -47,5 +49,37 @@
         >. Coded by <a href="https://github.com/joaocorner">João Eduardo</a>.
       </p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+      var ctx = document.getElementsByClassName("canvas");
+      var chartGraph = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+          datasets: [
+            {
+              label: "Spending - Last 7 days",
+              data: [17.45, 34.91, 52.36, 31.07, 23.39, 43.28, 25.48],
+              backgroundColor: ["hsl(10, 79%, 65%)"],
+              hoverBackgroundColor: ["hsl(186, 34%, 60%)"],
+            },
+          ],
+        },
+        options: {
+          plugins: {
+            legend: {
+              display: false,
+            },
+          },
+          scales: {
+            display: false,
+          },
+        },
+      });
+    </script>
+
+    <!-- <script src="custom.js"></script> -->
   </body>
 </html>
