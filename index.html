@@ -72,6 +72,22 @@
             legend: {
               display: false,
             },
+            tooltip: {
+              callbacks: {
+                label: function (context) {
+                  var label = context.dataset.label || "";
+
+                  if (context.parsed.y !== null) {
+                    label = "$" + context.parsed.y;
+                  }
+                  return label;
+                },
+                title: function () {
+                  return null;
+                },
+              },
+              displayColors: false,
+            },
           },
           scales: {
             y: {
