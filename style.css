@@ -22,7 +22,7 @@ body {
 }
 
 .box1 {
-  width: 300px;
+  width: 94%;
   height: 80px;
   background-color: hsl(10, 79%, 65%);
   color: white;
@@ -55,7 +55,7 @@ body {
   background-color: hsl(33, 100%, 98%);
   border-radius: 15px;
   padding: 15px;
-  height: 250px;
+  height: 290px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -73,6 +73,7 @@ body {
 
 .canvas {
   width: 100%;
+  margin: 20px 0;
 }
 
 .box2-total {
